@@ -19,6 +19,8 @@ a{
 
 /* HEADER */
 .header{
+    border: 1px solid red;
+
     display: flex;
     justify-content: space-between;
 
@@ -26,14 +28,18 @@ a{
     background-color: #1f2937;
 }
 
-@media screen and (max-width: 1000px){
-    .header{
-        padding: 20px 50px;
-    }
-
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-.logo{
+.logo > .text{
+    color: #f9faf8;
+    font-size: 24px;
+}
+
+.img-logo{
     /* border: 1px solid #eee; */
     width: 70px;
     height: auto;
@@ -42,7 +48,7 @@ a{
 
 .header-links{
     /* border: 1px solid #eee; */
-    color: #f9faf8;
+    color: #e5e7eb;;
     display: flex;
     gap: 50px;
     align-items: center;
@@ -50,3 +56,62 @@ a{
 }
 
 
+/* AWESOME CALLING */
+.awesome{
+    border: 1px solid red;
+
+    display: flex;
+    flex-grow: 1;
+
+    background-color: #1f2937;
+    padding: 10px 300px;
+
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+.awesome-content{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.awesome-content > .title{
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.awesome-content > .sub {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.awe-img{
+    width: 400px;
+    height: auto;
+    margin: 20px 20px;
+}
+
+.awesome-content > button{
+    color: #e5e7eb;
+    background-color: #3882f6;
+    padding: 5px 25px;
+    border-color: #3882f6;
+    border-radius: 8px;
+    align-self: flex-start;
+}
+
+/* Alternative margins in smaller viewports */
+
+@media screen and (max-width: 1000px){
+    .header{
+        padding: 20px 50px;
+    }
+    .awesome{
+        padding: 50px 50px;
+    }
+
+}
