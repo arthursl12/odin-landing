@@ -19,7 +19,7 @@ a{
 
 /* HEADER */
 .header{
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
     display: flex;
     justify-content: space-between;
@@ -58,7 +58,7 @@ a{
 
 /* AWESOME CALLING */
 .awesome{
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
     display: flex;
     flex-grow: 0;
@@ -76,6 +76,7 @@ a{
     flex-direction: column;
     padding: 10px;
     gap: 10px;
+    align-self: flex-start;
 }
 
 .awesome-content > .title{
@@ -109,7 +110,7 @@ a{
 /* RANDOM INFO */
 
 .random-info{
-    padding: 10px 300px;
+    padding: 80px 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -150,6 +151,43 @@ a{
     max-width: 150px;
 }
 
+/* QUOTE */
+
+.quote-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 80px;
+    flex-grow: 1;
+
+    background-color: #e5e7eb;
+}
+
+
+
+.quote-container > .text {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-container > .text > .quote{
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+    align-self: flex-start;
+}
+
+.quote-container > .text > .author{
+    font-size: 24px;
+    font-weight: 700;
+    color: #1f2937;
+    align-self: flex-end;
+}
+
+
+
 /* Alternative margins in smaller viewports */
 
 @media screen and (max-width: 1200px){
@@ -161,6 +199,18 @@ a{
     }
     .random-info{
         padding: 20px 50px;
+    }
+    .quote-container{
+        padding: 30px;
+    }
+    .quote-container > .text {
+        max-width: 600px;
+    }
+    .quote-container > .text > .quote{
+        font-size: 24px;
+    }
+    .quote-container > .text > .author{
+        font-size: 16px;
     }
 
 }
